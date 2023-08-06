@@ -1,0 +1,514 @@
+@font-face {
+    font-family: "TeX Gyre Adventor";
+    src: url('./fonts/TeXGyreAdventor-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TeX Gyre Adventor";
+    src: url('./fonts/TeXGyreAdventor-Bold.ttf');
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: #1C2D52;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1172px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    margin-right: 20px;
+}
+
+.header__title {
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header__btn {
+    background: transparent;
+    width: 220px;
+    height: 40px;
+    color: #FFF;
+    font-family: "TeX Gyre Adventor";
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    border: 2px solid #fff;
+    line-height: 30px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.header__btn:hover {
+    background: #fff;
+    color: #1C2D52;
+}
+
+.start {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background: url('./images/back.jpg');
+    position: relative;
+    z-index: 1;
+}
+
+.start__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    position: relative;
+}
+
+.start__container span {
+    color: #FFF;
+    font-family: "TeX Gyre Adventor";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.start__container span span {
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.start__block {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    padding: 10px 30px;
+    background: rgba(217, 217, 217, 0.2);
+    margin-bottom: 50px;
+}
+
+.start__block img {
+    margin-right: 10px;
+}
+
+.start__block p {
+    color: #FFF;
+    text-align: center;
+    font-family: "TeX Gyre Adventor";
+    font-weight: 400;
+}
+
+.start__title {
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.start__subtitle {
+    color: #FFF;
+    font-family: "TeX Gyre Adventor";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.start__btn {
+    background: #198B76;
+    width: 335px;
+    height: 60px;
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 22px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 65px;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    margin-bottom: 30px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.start__btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.start__green {
+    background: #198B76;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-110%);
+}
+
+.start__green img {
+    position: absolute;
+    height: 125%;
+    bottom: 0;
+    left: -110px;
+}
+
+.start__side {
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    display: flex;
+    align-items: start;
+    width: 50vw;
+    background-color: #1C2D52;
+    padding: 12px 25px;
+    padding-bottom: 30px;
+}
+
+.start__side img {
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.start__side p {
+    color: #fff;
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.start__side p span {
+    font-family: TeX Gyre Adventor;
+    font-weight: 400;
+}
+
+.plan {
+    position: relative;
+}
+
+.plan__title {
+    color: #FFF;
+    font-family: TeX Gyre Adventor;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.plan__container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan__line {
+    height: 620px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plan__block {
+    display: flex;
+    align-items: start;
+    margin-bottom: 35px;
+}
+
+.plan__block p {
+    color: #FFF;
+    font-family: TeX Gyre Adventor;
+    font-size: 19px;
+    font-style: normal;
+    width: 559px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plan__block:nth-child(2n) {
+    flex-direction: row-reverse;
+    transform: translateX(0%);
+}
+
+.plan__dot {
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+    background-color: #FAC337;
+    border-radius: 50px;
+}
+
+.form {
+    width: 100%;
+    background: url('./images/back.jpg');
+    padding: 50px 0 90px 0;
+}
+
+.form__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.form__subtitle {
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.form form {
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 140px;
+}
+
+.form__inp {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    border: none;
+    background: #D9D9D9;
+    padding: 20px 20px;
+    color: #000;
+    font-family: Times New Roman;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form__inp:last-child {
+    margin-bottom: 0;
+}
+
+.form__btn {
+    background-color: #198B76;
+    border: none;
+    border-radius: 8px;
+    width: 245px;
+    height: 65px;
+    margin: 0 auto;
+    margin-top: 45px;
+    color: #FFF;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .3s;
+}
+
+.form__btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__block p {
+    color: #FFF;
+    font-family: TeX Gyre Adventor;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.footer__link {
+    color: #198B76;
+    font-family: TeX Gyre Adventor;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1172px) {
+    .header__btn {
+        display: none;
+    }
+
+    .header__logo {
+        margin: 0 auto; 
+    }
+
+    .start {
+        padding-bottom: 0;
+    }
+
+    .wrapper {
+        max-width: 350px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .start__container:nth-last-child(2) {
+        margin-top: 30px;
+    }
+
+    .start__container span {
+        text-align: center;
+    }
+
+    .start__title {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .start__subtitle {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .start__green {
+        width: 180px;
+        height: 385px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .start__green img {
+        height: 120%;
+        left: 0px;
+        transform: translateX(-20%);
+    }
+
+    .start__side {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 40px;
+        width: 250px;
+        padding: 10px 10px;
+        padding-bottom: 30px;
+    }
+
+    .plan {
+        height: 100%;
+    }
+
+    .plan__title {
+        font-size: 23px;
+        width: 350px;
+        margin: 20px auto;
+    }
+
+    .plan__line {
+        height: 485px;
+        left: 12px;
+    }
+
+    .plan__block {
+        flex-direction: row-reverse;
+        transform: none;
+    }
+
+    .plan__block p {
+        font-size: 12px;
+    }
+
+    .plan__dot {
+        margin-left: 0;
+        padding: 12.5px;
+        width: 0;
+        height: 0;
+        box-sizing: content-box;
+    }
+
+    .form {
+        height: 100%;
+    }
+
+    .form__title {
+        font-size: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .form__subtitle {
+        font-size: 12px;
+        max-width: 350px;
+    }
+
+    .form form{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+
+    .footer img {
+        margin-bottom: 30px;
+    }
+}

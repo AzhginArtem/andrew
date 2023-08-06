@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OP Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__logo">
+          <img src="images/Logo.png" alt="Logo" class="header__img" />
+          <p class="header__title">OP Consulting</p>
+        </div>
+        <a href="#form" class="header__btn">Зарегистрироваться</a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="start">
+        <div class="wrapper">
+          <div class="start__container">
+            <div class="start__block">
+              <img src="images/clock.png" alt="Часы" />
+              <p>Бесплатный мини-курс</p>
+            </div>
+            <h2 class="start__title">
+              Как получать дополнительный доход от 40,000 до 500,000 рублей на
+              инвестициях в месяц
+            </h2>
+            <p class="start__subtitle">
+              <b>Простыми словами</b> о том, как все это работает, сколько денег нужно,
+              куда ивестировать и как не потерять вложения
+            </p>
+            <a class="start__btn" href="#form">Смотреть мини-курс</a>
+            <span> <s>5000</s> рублей <span>БЕСПЛАТНО</mark> </span>
+          </div>
+          <div class="start__container">
+            <div class="start__green">
+              <img src="images/man.png" alt="Владимир Лебедев" />
+          </div>
+          </div>
+          <div class="start__side">
+            <img src="images/dot.png" alt="Точка" />
+            <p>Владимир Лебедев. <br> <span>Капитал в управлении 63 млн евро</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="plan">
+        <h2 class="plan__title">В серии бесплатных уроков рассказываю</h2>
+        <div class="wrapper">
+            <hr class="plan__line" />
+          <div class="plan__container">
+            <div class="plan__block">
+              <p>26 видов инвестирования, и куда на старте ни в коем случае нельзя
+              вкладывать</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>Как все это работает - на пальцах. Как работает рынок инвестиций доступным языком с помощью анимации и графики</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>Как копить деньги, даже если их мало. 3 эффективных способа копить деньги, даже если у вас небольшой доход</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>Куда инвестировать в 2023 году, как создать капитал на 3,000,000 рублей</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>План-схема из 5 шагов, как с нуля создать капитал и стать финансово свободным</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>Фундаментальные правила обращения с деньгами. 7 фатальных ошибок начинающих инвесторов</p>
+              <div class="plan__dot"></div>
+            </div>
+            <div class="plan__block">
+                <p>
+                    Список акций с самыми большими дивидендами</p>
+              <div class="plan__dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form" id="form">
+        <h2 class="form__title">Бесплатный мини-курс для начинающих
+            инвесторов</h2>
+        <p class="form__subtitle">Введите ваше ваше имя, электронную почту для получения доступа к мини-курсу
+            и актуальный номер телефона, чтобы закрепить за собой бонусы</p>
+        <form action="mailer/smart.php" method="post">
+            <input type="text" name="name" class="form__inp" placeholder="Введите ваше имя">
+            <input type="email" name="email" class="form__inp" placeholder="Введите ваше эл. адрес">
+            <input type="tel" name="phone" id="phone" class="form__inp" placeholder="Введите ваш телефон">
+            <input type="submit" class="form__btn" value="Получить доступ">
+        </form>
+        <footer class="footer">
+          <div class="wrapper" style="align-items: start;">
+            <img src="images/Logo.png" alt="Logo">
+            <div class="footer__block">
+                <a href="https://docs.google.com/document/d/1bjGJlOiSFQj_B4Py6QtrJ-18B50wvjw1T2cS7QOFtuo/edit" class="footer__link">Политика конфиденциальности</a>
+                <a href="https://drive.google.com/file/d/1ftCvKoegdKehpZxNxZ3CvcMdRukNR3aI/view" class="footer__link">Патент на образовательную деятельность</a>
+                <p>Адрес эл. почты для обращений: <a href="" class="footer__link">info@oneplata.com</a>
+                </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+          utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+      });
+
+      $('form').submit(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+          type: 'POST',
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+        }).done(() => {
+          $(this).find("input").val("");
+          $('form').trigger('reset');
+        })
+        return false;
+      })
+    </script>
+  </body>
+</html>
